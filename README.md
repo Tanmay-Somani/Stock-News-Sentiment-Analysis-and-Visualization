@@ -1,2 +1,33 @@
 # Stock-News-Sentiment-Analysis-and-Visualization
-This script scrapes stock news headlines from Finviz, extracts the date, time, and title, and stores the data in a structured format for further analysis like sentiment analysis or visualization.
+
+This project performs sentiment analysis on stock news headlines from Finviz and visualizes the average polarity scores for a specified stock ticker.
+
+## Requirements
+
+- Python 3.x
+- `nltk`
+- `pandas`
+- `matplotlib`
+- `beautifulsoup4`
+
+## Installation
+
+1. Clone the repository or download the script.
+2. Install the required packages:
+
+   ```bash
+   pip install nltk pandas matplotlib beautifulsoup4
+
+## Download the VADER Lexicon for Sentiment Analysis
+
+To download the VADER lexicon, run the following code:
+
+```python
+import nltk
+nltk.download('vader_lexicon')
+```
+
+## improvement
+1. Machine Learning
+2. Visualization
+3. Production Level Deployment
