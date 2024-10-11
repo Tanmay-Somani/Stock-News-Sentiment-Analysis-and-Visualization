@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Stock Sentiment Analysis</title>
+</head>
+<body>
+<div class="container">
+    <h1>Stock Sentiment Analysis</h1>
+    <form id="tickerForm">
+        <input type="text" id="tickerInput" placeholder="Enter ticker symbols separated by commas (e.g., AAPL, TSLA)" required>
+        <button type="submit">Analyze Sentiment</button>
+    </form>
+    <div id="loading" class="loading" style="display:none;">
+        <div class="spinner"></div>
+        <p>Analyzing sentiment...</p>
+    </div>
+    <div id="result"></div>
+    <div id="chartContainer">
+        <canvas id="sentimentChart"></canvas>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

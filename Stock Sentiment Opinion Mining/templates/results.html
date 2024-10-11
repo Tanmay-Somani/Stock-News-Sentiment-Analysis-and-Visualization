@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>Sentiment Analysis Results</h1>
+<div id="result">
+    <h2>News Table</h2>
+    <div>{{ table|safe }}</div>
+    <h2>Mean Polarity Score Plot</h2>
+    <img id="plotImg" src="{{ plot_url }}" alt="Mean Polarity Score Plot">
+</div>
+<a href="/">Go Back</a>
+</body>
+</html>
